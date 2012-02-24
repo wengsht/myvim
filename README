@@ -1,0 +1,5 @@
+
+
+cd ~/.vim/bundle/command-T/ruby/command-t
+ruby extconf.rb
+make
