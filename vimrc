@@ -76,4 +76,3 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=242
 let NERDChristmasTree=1
 let NERDTreeWinSize=25
 
-
