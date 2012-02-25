@@ -60,6 +60,9 @@ set t_Co=256
 nmap <C-o> :CommandT<cr>
 nmap <F5> :IndentGuidesToggle<cr>
 nmap <F4> :NERDTreeToggle<cr>
+"nmap <F4>> :NERDTreeClose<cr>
+nmap <F3> :NERDTreeFind<cr>
+
 
 "indent guides
 set ts=4 sw=4 et
