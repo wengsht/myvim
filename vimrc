@@ -76,3 +76,4 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=242
 let NERDChristmasTree=1
 let NERDTreeWinSize=25
 
+nmap <c-a> i#include <vector><cr>#include <list><cr>#include <map><cr>#include <set><cr>#include <deque><cr>#include <queue><cr>#include <stack><cr>#include <bitset><cr>#include <algorithm><cr>#include <functional><cr>#include <numeric><cr>#include <utility><cr>#include <sstream><cr>#include <iostream><cr>#include <iomanip><cr>#include <cstdio><cr>#include <cmath><cr>#include <cstdlib><cr>#include <cctype><cr>#include <string><cr>#include <cstring><cr>#include <cstdio><cr>#include <cmath><cr>#include <cstdlib><cr>#include <ctime><cr> <cr>using namespace std;<cr><cr>int main() {<cr><ESC>kk
