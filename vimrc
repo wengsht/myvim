@@ -92,3 +92,6 @@ nmap zff zf%
 "http://sourceforge.net/projects/ctags/files/ctags/5.8/ctags-5.8.tar.gz/download
 "and read the doc here:
 "http://easwy.com/blog/archives/exuberant-ctags-chinese-manual/
+
+set tags+=~/.vim/systags
+
