@@ -6,7 +6,7 @@
 	url = git://github.com/Raimondi/delimitMate.git
 [submodule "bundle/closetag"]
 	path = bundle/closetag
-	url = git://github.com/docunext/closetag.vim.git
+	url = https://github.com/Raimondi/delimitMate
 [submodule "bundle/command-T"]
 	path = bundle/command-T
 	url = git://github.com/wincent/Command-T.git

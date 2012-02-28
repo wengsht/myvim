@@ -1,4 +1,5 @@
 " Don't be compatible with vi
+
 set nocompatible
 
 filetype on
@@ -95,3 +96,5 @@ nmap zff zf%
 
 set tags+=~/.vim/systags
 
+"delimitMate
+let delimitMate_matchpairs = "(:),[:],{:},\":\""
