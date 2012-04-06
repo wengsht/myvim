@@ -28,3 +28,6 @@
 [submodule "bundle/neocomplcache"]
 	path = bundle/neocomplcache
 	url = http://github.com/Shougo/neocomplcache
+[submodule "vim-markdown"]
+	path = vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
