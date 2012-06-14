@@ -48,8 +48,8 @@ set expandtab     " tab is replaced with 4 spaces
 set showcmd
 
 " colorscheme
-colorscheme tir_black
-
+" color tir_black
+color Tomorrow-Night
 " dark background (changing color of word)
 set background=dark
 
@@ -85,16 +85,24 @@ let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 autocmd Syntax html let g:neocomplcache_disable_auto_complete=1
 set completeopt-=preview
 
-nmap <c-a> i#include <vector><cr>#include <list><cr>#include <map><cr>#include <set><cr>#include <deque><cr>#include <queue><cr>#include <stack><cr>#include <bitset><cr>#include <algorithm><cr>#include <functional><cr>#include <numeric><cr>#include <utility><cr>#include <sstream><cr>#include <iostream><cr>#include <iomanip><cr>#include <cstdio><cr>#include <cmath><cr>#include <cstdlib><cr>#include <cctype><cr>#include <string><cr>#include <cstring><cr>#include <cstdio><cr>#include <cmath><cr>#include <cstdlib><cr>#include <ctime><cr> <cr>using namespace std;<cr><cr>int main() {<cr><ESC>kk
+nmap <c-a> i#include <vector><cr>#include <list><cr>#include <map><cr>#include <set><cr>#include <deque><cr>#include <queue><cr>#include <stack><cr>#include <bitset><cr>#include <algorithm><cr>#include <functional><cr>#include <numeric><cr>#include <utility><cr>#include <sstream><cr>#include <iostream><cr>#include <iomanip><cr>#include <cstdio><cr>#include <cmath><cr>#include <cstdlib><cr>#include <cctype><cr>#include <string><cr>#include <cstring><cr>#include <cstdio><cr>#include <cmath><cr>#include <cstdlib><cr>#include <ctime><cr> <cr>using namespace std;<cr><cr>int main() <cr>{<cr><ESC>kk
+
+nmap <c-A> i#include <iostream><cr>#include <cstdio><cr>#include <cstring><cr>#include <cstdlib><cr>using namespace std;<cr><cr>#define HOME <cr>int main()<cr>{<cr><cr><ESC>ki#ifdef HOME<cr>freopen("1.txt", "r", stdin);<cr>#endif<cr><ESC>
+
+nmap <c-c> i---<cr>layout: post<cr>title:<cr>abstract:<cr><cr>tags:<cr>- Personal<cr>- 履历<cr>type: post/diary<cr>---<cr><ESC>
+
 
 nmap zff zf%
+nmap zu ggvGzo
 
 "get the exuberant Ctags here:
 "http://sourceforge.net/projects/ctags/files/ctags/5.8/ctags-5.8.tar.gz/download
 "and read the doc here:
 "http://easwy.com/blog/archives/exuberant-ctags-chinese-manual/
 
+"g+] to list all the tags
 set tags+=~/.vim/systags
+set tags+=/usr/src/linux/tags
 
 "delimitMate
 let delimitMate_matchpairs = "(:),[:],{:},\":\""
