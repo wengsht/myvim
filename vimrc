@@ -106,3 +106,13 @@ set tags+=/usr/src/linux/tags
 
 "delimitMate
 let delimitMate_matchpairs = "(:),[:],{:},\":\""
+
+set cursorline
+set cursorcolumn
+
+highlight CursorLine cterm=bold,underline guibg=none ctermbg=black
+
+nmap <F6> :w!<Enter> :!gcc % -o %:r<Enter>
+nmap <F7> :w!<Enter> :!g++ % -o %:r<Enter>
+
+nmap <F8> :!./%:r<Enter>
