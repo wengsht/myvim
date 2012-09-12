@@ -49,7 +49,7 @@ set showcmd
 
 " colorscheme
 " color tir_black
-color Tomorrow-Night
+colorscheme macvim 
 " dark background (changing color of word)
 set background=dark
 
@@ -110,9 +110,29 @@ let delimitMate_matchpairs = "(:),[:],{:},\":\""
 set cursorline
 set cursorcolumn
 
-highlight CursorLine cterm=bold,underline guibg=none ctermbg=black
+highlight CursorLine cterm=underline ctermbg=black
 
 nmap <F6> :w!<Enter> :!gcc % -o %:r<Enter>
 nmap <F7> :w!<Enter> :!g++ % -o %:r<Enter>
 
 nmap <F8> :!./%:r<Enter>
+
+nmap <c-l> :w!<Enter> :!python %<Enter>
+
+set columns=130
+set lines=40
+
+" Mac Vim
+if has("gui_running")
+    " 去掉菜单栏
+    set go=aAce
+    set guifont=Courier_New:h18
+    set transparency=80
+    hi guibg=black;
+
+endif
+
+nmap <C-F> :w!<Enter> :!firefox %<Enter>
+
+
+
