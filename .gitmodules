@@ -6,7 +6,7 @@
 	url = git://github.com/Raimondi/delimitMate.git
 [submodule "bundle/closetag"]
 	path = bundle/closetag
-	url = https://github.com/Raimondi/delimitMate
+	url = https://github.com/docunext/closetag.vim.git
 [submodule "bundle/command-T"]
 	path = bundle/command-T
 	url = git://github.com/wincent/Command-T.git
@@ -31,6 +31,6 @@
 [submodule "bundle/markdown"]
 	path = bundle/markdown
 	url = https://github.com/plasticboy/vim-markdown.git
-[submodule "bundle/zen-coding"]
-	path = bundle/zen-coding
+[submodule "bundle/zencoding-vim"]
+	path = bundle/zencoding-vim
 	url = git://github.com/mattn/zencoding-vim.git
