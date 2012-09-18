@@ -101,8 +101,7 @@ nmap zu ggvGzo
 "http://easwy.com/blog/archives/exuberant-ctags-chinese-manual/
 
 "g+] to list all the tags
-set tags+=~/.vim/systags
-set tags+=/usr/src/linux/tags
+set tags+=/Users/wengsht/Program/linux/tags
 
 "delimitMate
 let delimitMate_matchpairs = "(:),[:],{:},\":\""
