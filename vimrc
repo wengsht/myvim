@@ -49,7 +49,7 @@ set showcmd
 
 " colorscheme
 " color tir_black
-colorscheme macvim 
+colorscheme tir_black
 " dark background (changing color of word)
 set background=dark
 
@@ -85,10 +85,6 @@ let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 autocmd Syntax html let g:neocomplcache_disable_auto_complete=1
 set completeopt-=preview
 
-nmap <c-a> i#include <vector><cr>#include <list><cr>#include <map><cr>#include <set><cr>#include <deque><cr>#include <queue><cr>#include <stack><cr>#include <bitset><cr>#include <algorithm><cr>#include <functional><cr>#include <numeric><cr>#include <utility><cr>#include <sstream><cr>#include <iostream><cr>#include <iomanip><cr>#include <cstdio><cr>#include <cmath><cr>#include <cstdlib><cr>#include <cctype><cr>#include <string><cr>#include <cstring><cr>#include <cstdio><cr>#include <cmath><cr>#include <cstdlib><cr>#include <ctime><cr> <cr>using namespace std;<cr><cr>int main() <cr>{<cr><ESC>kk
-
-nmap <c-A> i#include <iostream><cr>#include <cstdio><cr>#include <cstring><cr>#include <cstdlib><cr>using namespace std;<cr><cr>#define HOME <cr>int main()<cr>{<cr><cr><ESC>ki#ifdef HOME<cr>freopen("1.txt", "r", stdin);<cr>#endif<cr><ESC>
-
 nmap <c-c> i---<cr>layout: post<cr>title:<cr>abstract:<cr><cr>tags:<cr>- Personal<cr>- 履历<cr>type: post/diary<cr>---<cr><ESC>
 
 
@@ -111,15 +107,11 @@ set cursorcolumn
 
 highlight CursorLine cterm=underline ctermbg=black
 
-nmap <F6> :w!<Enter> :!gcc % -o %:r<Enter>
 nmap <F7> :w!<Enter> :!g++ % -o %:r<Enter>
 
-nmap <F8> :!./%:r<Enter>
+nmap <F8> :w!<Enter> :!g++ % -o %:r<Enter>:!./%:r<Enter>
 
 nmap <c-l> :w!<Enter> :!python %<Enter>
-
-set columns=130
-set lines=40
 
 " Mac Vim
 if has("gui_running")
@@ -128,10 +120,41 @@ if has("gui_running")
     set guifont=Courier_New:h18
     set transparency=80
     hi guibg=black;
-
 endif
+   
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <a-j> <c-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
-nmap <C-F> :w!<Enter> :!firefox %<Enter>
+# zen_conding
+let g:user_zen_expandabbr_key = '<c-e>'
 
+# vimwiki
+let vimwiki_site = "/Users/wengsht/Dropbox/wiki/"
+let vimwiki_diary = 'diary/' . strftime('%Y/%Y-%b')
+let vim_blog = "/Users/wengsht/Program/wengsht.github.com/"
+let vimwiki_html = vim_blog . 'wiki'
+let vimwiki_html_template = vimwiki_html . '/template'
+let g:vimwiki_list = [{ 'path': vimwiki_site, 
+            \ 'path_html': vimwiki_html,
+            \ 'template_path': vimwiki_html_template,
+            \ 'template_default': 'template.tpl',
+            \ 'diary_header': '日记',
+            \ 'diary_link_count': 5,
+            \ 'diary_rel_path' : vimwiki_diary,
+            \ 'auto_export': 1   }]
+let g:vimwiki_diary_months = {
+      \ 1: '一月-迎春', 2: '二月-兰花', 3: '三月-桃花', 
+      \ 4: '四月-芙蓉', 5: '五月-蔷薇', 6: '六月-荷花',
+      \ 7: '七月-栀子', 8: '八月-桂花', 9: '九月-菊花',
+      \ 10: '十月-石榴', 11: '十一月-水仙', 12: '十二月-腊梅'
+      \ }
+let g:vimwiki_camel_case = 0
 
+map \\n :VimwikiGoto 
 
+map <F6> :Calendar<cr>
+map \\m :!open /Users/wengsht/Program/wengsht.github.com/wiki/index.html<cr>
+map \\g :VimwikiGoto 
