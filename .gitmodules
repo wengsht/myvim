@@ -37,6 +37,3 @@
 [submodule "bundle/slime"]
 	path = bundle/slime
 	url = git://github.com/jpalardy/vim-slime.git
-[submodule "bundle/taglist"]
-	path = bundle/taglist
-	url = git://github.com/vim-scripts/taglist.vim.git
