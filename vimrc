@@ -106,8 +106,6 @@ highlight CursorLine cterm=underline ctermbg=black
 
 nmap <F7> :cd %:p:h<Enter>
 
-nmap <F8> :w!<Enter> :!g++ *.cpp -o %:r<Enter>:!./%:r<Enter>
-
 nmap <c-l> :w!<Enter> :!python %<Enter>
 
 " Mac Vim
@@ -160,3 +158,5 @@ map \\g :VimwikiGoto
 let g:slime_target = "tmux"
 let g:slime_paste_file = "$HOME/.slime_paste"
 
+" taglist
+nmap <F8> :TlistToggle<CR>
