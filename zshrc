@@ -38,9 +38,13 @@ source $ZSH/oh-my-zsh.sh
 
 alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 alias sshlab="ssh wengsht@172.18.184.163"
+alias sshvir="ssh wengsht@172.18.184.164"
+
 alias gitadd="git add *"
 alias gitcommit="git commit -am "
 alias gitpush="git push origin master"
+
+alias tmuxshow="tmux list-panes -a"
 
 alias cdcpp="cd ~/Dropbox/C++助教/作业汇总/"
 alias cdweb="cd ~/Dropbox/安全助教/"
@@ -48,6 +52,9 @@ alias cdwiki="cd ~/Dropbox/wiki/"
 
 alias openwiki="open /Users/wengsht/Program/wengsht_wiki/index.html"
 alias webscarab="java -jar /Users/wengsht/Program/WebScarab/webscarab.jar"
+
+alias gracket="~/Program/Racket\ v5.3.1/bin/gracket"
+alias racket="~/Program/Racket\ v5.3.1/bin/racket"
 
 # Customize to your needs...
 #

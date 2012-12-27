@@ -85,9 +85,6 @@ let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 autocmd Syntax html let g:neocomplcache_disable_auto_complete=1
 set completeopt-=preview
 
-nmap <c-c> i---<cr>layout: post<cr>title:<cr>abstract:<cr><cr>tags:<cr>- Personal<cr>- 履历<cr>type: post/diary<cr>---<cr><ESC>
-
-
 nmap zff zf%
 nmap zu ggvGzo
 
@@ -97,7 +94,7 @@ nmap zu ggvGzo
 "http://easwy.com/blog/archives/exuberant-ctags-chinese-manual/
 
 "g+] to list all the tags
-set tags+=/Users/wengsht/Program/linux/tags
+set tags+=./tags
 
 "delimitMate
 let delimitMate_matchpairs = "(:),[:],{:},\":\""
@@ -107,9 +104,9 @@ set cursorcolumn
 
 highlight CursorLine cterm=underline ctermbg=black
 
-nmap <F7> :w!<Enter> :!g++ % -o %:r<Enter>
+nmap <F7> :cd %:p:h<Enter>
 
-nmap <F8> :w!<Enter> :!g++ % -o %:r<Enter>:!./%:r<Enter>
+nmap <F8> :w!<Enter> :!g++ *.cpp -o %:r<Enter>:!./%:r<Enter>
 
 nmap <c-l> :w!<Enter> :!python %<Enter>
 
@@ -128,10 +125,10 @@ map <a-j> <c-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-# zen_conding
+" zen_conding
 let g:user_zen_expandabbr_key = '<c-e>'
 
-# vimwiki
+" vimwiki
 let vimwiki_site = "/Users/wengsht/Dropbox/wiki/"
 let vimwiki_diary = 'diary/' . strftime('%Y/%Y-%b')
 let vim_blog = "/Users/wengsht/Program/wengsht.github.com/"
@@ -158,3 +155,8 @@ map \\n :VimwikiGoto
 map <F6> :Calendar<cr>
 map \\m :!open /Users/wengsht/Program/wengsht.github.com/wiki/index.html<cr>
 map \\g :VimwikiGoto 
+
+" slime
+let g:slime_target = "tmux"
+let g:slime_paste_file = "$HOME/.slime_paste"
+
