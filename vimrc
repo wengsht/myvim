@@ -159,4 +159,11 @@ let g:slime_target = "tmux"
 let g:slime_paste_file = "$HOME/.slime_paste"
 
 " taglist
-nmap <F8> :TlistToggle<CR>
+nmap <F8> :TagbarToggle<CR>
+
+:command W w
+:command WQ wq
+:command Wq wq
+:command Q q
+:command Qa qa
+:command QA qa
