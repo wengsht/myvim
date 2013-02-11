@@ -1,0 +1,28 @@
+map q previousTab
+map w nextTab
+unmap d
+map d removeTab
+unmap u
+map u restoreTab
+unmap J
+map J scrollPageDown
+unmap K
+map K scrollPageUp
+unmap gf
+map gf toggleViewSource
+unmap o
+map o createTab
+unmap O 
+map O Vomnibar.activateTabSelection
+unmap t 
+map t Vomnibar.activateInNewTab
+unmap T
+map T Vomnibar.activate
+unmap b
+map b Vomnibar.activateBookmarksInNewTab
+unmap B 
+map B Vomnibar.activateBookmarks
+unmap f
+map f LinkHints.activateModeToOpenInNewTab
+unmap F
+map FLinkHints.activateMode

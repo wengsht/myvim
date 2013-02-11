@@ -1,0 +1,1 @@
+find /Users/wengsht/Program/wengsht.github.com/wiki | grep -e png -e jpg | grep -v mindnode | sed 's;\(^.*$\);\1 \1;' | sed 's;^;cp ;' | sed 's;Program/wengsht.github.com/wiki;Dropbox/wiki;2'

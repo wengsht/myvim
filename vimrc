@@ -1,5 +1,4 @@
 " Don't be compatible with vi
-
 set nocompatible
 
 filetype on
@@ -57,13 +56,16 @@ set t_Co=256
 " background color
 " color evening
 
-" keyboard map
+" command-t
 nmap <C-o> :CommandT<cr>
-nmap <F5> :IndentGuidesToggle<cr>
-nmap <F4> :NERDTreeToggle<cr>
-"nmap <F4>> :NERDTreeClose<cr>
-nmap <F3> :NERDTreeFind<cr>
 
+" indentguide
+nmap <F5> :IndentGuidesToggle<cr>
+
+"nerdtree
+"nmap <F4> :NERDTreeToggle<cr>
+nmap <F4> :NERDTreeClose<cr>
+nmap <F3> :NERDTreeFind<cr>
 
 "indent guides
 set ts=4 sw=4 et
@@ -94,19 +96,20 @@ nmap zu ggvGzo
 "http://easwy.com/blog/archives/exuberant-ctags-chinese-manual/
 
 "g+] to list all the tags
-set tags+=./tags
+"set tags+=./tags
+
+set tags=tags
 
 "delimitMate
 let delimitMate_matchpairs = "(:),[:],{:},\":\""
 
+" cursor
 set cursorline
 set cursorcolumn
-
 highlight CursorLine cterm=underline ctermbg=black
 
-nmap <F7> :cd %:p:h<Enter>
-
-nmap <c-l> :w!<Enter> :!python %<Enter>
+" change pwd to ./
+nmap <F2> :cd %:p:h<Enter>
 
 " Mac Vim
 if has("gui_running")
@@ -117,6 +120,7 @@ if has("gui_running")
     hi guibg=black;
 endif
    
+" wantn't use w
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <a-j> <c-w>j
@@ -158,9 +162,17 @@ map \\g :VimwikiGoto
 let g:slime_target = "tmux"
 let g:slime_paste_file = "$HOME/.slime_paste"
 
-" taglist
-nmap <F8> :TagbarToggle<CR>
+" tagbar
+nmap <F7> :TagbarOpen fj<CR>
+nmap <F8> :TagbarClose<CR>
+let g:tagbar_autofocus = 1
+let g:tagbar_left = 1
+let g:tagbar_width = 30
+let g:tarbar_sort = 0
+let g:tagbar_compact = 1
+let g:tagbar_autoclose = 0
 
+"
 :command W w
 :command WQ wq
 :command Wq wq

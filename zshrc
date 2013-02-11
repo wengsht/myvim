@@ -56,10 +56,13 @@ alias webscarab="java -jar /Users/wengsht/Program/WebScarab/webscarab.jar"
 alias gracket="~/Program/Racket\ v5.3.1/bin/gracket"
 alias racket="~/Program/Racket\ v5.3.1/bin/racket"
 
+alias rscp="rsync -v -P -e ssh"
 # Customize to your needs...
 #
 bindkey -e
 bindkey '^[[1;9D' forward-word
 bindkey '^[[1;9C' backward-word
 bindkey '^[[1;9E' backward-delete-word
+
+
 
