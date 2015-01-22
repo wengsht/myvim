@@ -6,9 +6,9 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="duellj"
-ZSH_THEME="rkj-repos"
+#ZSH_THEME="rkj-repos"
 #ZSH_THEME="rkj"
-#ZSH_THEME="xiong-chiamiov-plus"
+ZSH_THEME="xiong-chiamiov-plus"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -38,35 +38,21 @@ source $ZSH/oh-my-zsh.sh
 
 alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 alias sshlab="ssh wengsht@172.18.184.163"
-alias sshvir="ssh wengsht@172.18.184.164"
-
 alias gitadd="git add *"
 alias gitcommit="git commit -am "
 alias gitpush="git push origin master"
 
-alias tmuxshow="tmux list-panes -a"
+alias cdcpp="cd ~/Dropbox/C++助教/作业汇总/"
+alias cdweb="cd ~/Dropbox/安全助教/"
+alias cdwiki="cd ~/Dropbox/wiki/"
 
 alias openwiki="open /Users/wengsht/Program/wengsht_wiki/index.html"
 alias webscarab="java -jar /Users/wengsht/Program/WebScarab/webscarab.jar"
 
-
-
-
-alias life="python ~/Program/Life/life/main.py"
-
-alias rscp="rsync -v -P -e ssh"
 # Customize to your needs...
 #
 bindkey -e
 bindkey '^[[1;9D' forward-word
 bindkey '^[[1;9C' backward-word
 bindkey '^[[1;9E' backward-delete-word
-
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/HOME"
-export PATH=$PATH:/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home/bin:/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home/jre/bin:/usr/local/cuda/bin:~/Program/kaldi-trunk-git/tools/openfst/bin:/Users/wengsht/Program/kaldi-trunk-git/src/featbin
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib
-alias mit-scheme="/Applications/MIT:GNU\ Scheme.app/Contents/Resources/mit-scheme"
-
-alias tssh="ssh lab -t 'tmux list-session; if [[ $? -eq  0 ]]; then tmux attach; else tmux;fi'"
-export CUDA_INSTALL_PATH=/usr/local/cuda
 

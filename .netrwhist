@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/wengsht/Course/speech/hw/master/src'
+let g:netrw_dirhist_2='/Users/wengsht/Course/speech/projects/codes/build/seg_config'
+let g:netrw_dirhist_3='/Users/wengsht/Program/kaldi-trunk-git/egs/voxforge/s5/steps'
+let g:netrw_dirhist_4='/Users/wengsht/Program/kaldi-trunk-git/egs/yesno/s5/data/local/dict'
+let g:netrw_dirhist_5='/Users/wengsht/Program/kaldi-trunk-git/egs/yesno/s5/data/local/lang'
+let g:netrw_dirhist_6='/Users/wengsht/Program/kaldi-trunk-git/egs/yesno/s5/data/lang'
+let g:netrw_dirhist_7='/Users/wengsht/Program/kaldi-trunk-git/egs/yesno/s5/data/local/dict'
+let g:netrw_dirhist_8='/Users/wengsht/Program/kaldi-trunk-git/egs/yesno/s5/exp/mono0a/graph_tgpr'

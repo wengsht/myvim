@@ -64,7 +64,7 @@ nmap <F5> :IndentGuidesToggle<cr>
 
 "nerdtree
 "nmap <F4> :NERDTreeToggle<cr>
-nmap <F4> :NERDTreeClose<cr>
+nmap <F4> :NERDTreeClose<cr> :TagbarClose<cr>
 nmap <F3> :NERDTreeFind<cr>
 
 "indent guides
@@ -106,6 +106,7 @@ let delimitMate_matchpairs = "(:),[:],{:},\":\""
 " cursor
 set cursorline
 set cursorcolumn
+
 highlight CursorLine cterm=underline ctermbg=black
 
 " change pwd to ./
@@ -123,7 +124,6 @@ endif
 " wantn't use w
 map <C-h> <C-w>h
 map <C-j> <C-w>j
-map <a-j> <c-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
@@ -161,10 +161,14 @@ map \\g :VimwikiGoto
 " slime
 let g:slime_target = "tmux"
 let g:slime_paste_file = "$HOME/.slime_paste"
+let g:slime_paste_file = tempname()
+let g:slime_default_config = {"socket_name": "default", "target_pane": "1"}
+
 
 " tagbar
 nmap <F7> :TagbarOpen fj<CR>
 nmap <F8> :TagbarClose<CR>
+
 let g:tagbar_autofocus = 1
 let g:tagbar_left = 1
 let g:tagbar_width = 30
@@ -179,3 +183,18 @@ let g:tagbar_autoclose = 0
 :command Q q
 :command Qa qa
 :command QA qa
+
+nmap \tt :w<cr>:!g++ % -o %:r<Enter>:!./%:r < 1.txt<Enter>
+nmap \yy :w<cr>:!g++ % -o %:r<Enter>:!./%:r < 1.txt > 2.txt <Enter>
+
+nmap gn gt
+nmap gp gT
+nmap gr :tabnew<cr>
+nmap gc :tabc<cr>
+
+set clipboard=unnamed
+
+"set foldenable
+"set foldmethod=syntax
+"set foldcolumn=0
+

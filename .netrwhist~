@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/wengsht/Dropbox/C++助教/作业汇总/第8周/12346079 彭宜道 第八周'
+let g:netrw_dirhist_2='/Users/wengsht/Dropbox/C++助教/作业汇总/第8周/12346146_卓文逸_Chap6_08'
+let g:netrw_dirhist_3='/Users/wengsht/Dropbox/C++助教/作业汇总/第8周/12346103-谢灿林-chap06-08'
