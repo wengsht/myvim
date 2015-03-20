@@ -122,10 +122,11 @@ if has("gui_running")
 endif
    
 " wantn't use w
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
+
 
 " zen_conding
 let g:user_zen_expandabbr_key = '<c-e>'
@@ -193,6 +194,9 @@ nmap gr :tabnew<cr>
 nmap gc :tabc<cr>
 
 set clipboard=unnamed
+
+nmap <c-a> :vertical resize +5<cr>
+nmap <c-b> :vertical resize -5<cr>
 
 "set foldenable
 "set foldmethod=syntax

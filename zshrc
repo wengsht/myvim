@@ -67,6 +67,12 @@ export PATH=$PATH:/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Hom
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib
 alias mit-scheme="/Applications/MIT:GNU\ Scheme.app/Contents/Resources/mit-scheme"
 
-alias tssh="ssh lab -t 'tmux list-session; if [[ $? -eq  0 ]]; then tmux attach; else tmux;fi'"
+alias tssh="ssh panda -t 'tmux list-session; if [[ $? -eq  0 ]]; then tmux attach; else tmux;fi'"
 export CUDA_INSTALL_PATH=/usr/local/cuda
 
+export PATH=$PATH:$HOME/Program/hadoop-2.4.0/bin
+
+export PROJ3_ROOT=/Users/wengsht/Course/HowToWriteFastCode/Project/fastcode/Proj3
+
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cppunit/lib
